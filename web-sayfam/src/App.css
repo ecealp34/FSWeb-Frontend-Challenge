@@ -64,31 +64,132 @@
   position: relative;
 }
 
-html {
-  padding-bottom: 100px;
-  height: 100%;
-  overflow: hidden;
-  width: 100vw;
-  height: 100vh;
-  overflow-y: scroll;
-  overflow-x: hidden;
-  -webkit-overflow-scrolling: touch;
-  background: none;
-  background-color: var(--bg-color);
-  top: 150px;
+
+.dark-theme {
+  background-color: #252128;;
+  color: #FFFFFF;
+  width: fit-content;
+  text-align: center;
 }
 
-:root {
-
-  --font-color: #0f0f0f;
-  --bg-color: #fefefe;
-
+.dark-theme a{
+  color: rgba(225, 225, 255, 1);
 }
 
-[data-theme="dark"] {
+.dark-theme .switcher.mode p {
+  color: 
+  rgba(217, 217, 217, 1)
+}
+.dark-theme p {
+  color: 
+  rgba(186, 178, 231, 1);
+}
+.dark-theme .switchLanguage span {
+  color:
+  rgba(119, 119, 119, 1)
+}
 
-  --font-color: #fefefe;
-  --bg-color: #121212;
+
+.dark-theme .hireMe a{
+  color: rgba(55, 48, 163, 1);
+  background-color: rgba(255, 255, 255, 1);
+  border-color: rgba(55, 48, 163, 1);
+}
+.dark-theme .logo {
+  background-color:  rgba(71, 49, 211, 1);
+  color: rgba(143, 136, 255, 1);
+}
+.dark-theme .line {
+  color: rgba(186, 178, 231, 1);
+}
+
+.dark-theme .information h1 {
+  color:rgba(174, 188, 207, 1);
+}
+.dark-theme .information p {
+  color: rgba(255, 255, 255, 1);
+}
+.dark-theme .information span {
+  color: rgba(183, 170, 255, 1);
+}
+
+.dark-theme .button {
+  background-color:  rgba(225, 225, 255, 1);
+  color:  rgba(0, 0, 0, 1);
+}
+.dark-theme .button1 {
+  background-color:  rgba(56, 56, 56, 1);
+  color:  rgba(225, 225, 255, 1)
+}
+
+.dark-theme svg {
+  color:  rgba(186, 178, 231, 1)
+}
+
+
+.dark-theme .abilities h2 {
+  color: rgba(174, 188, 207, 1)
+}
+
+.dark-theme .Skills h4 {
+  color:  rgba(183, 170, 255, 1)
+}
+
+.dark-theme .Skills p {
+  color: rgba(255, 255, 255, 1)
+}
+.dark-theme .profile h2 {
+  color:  rgba(174, 188, 207, 1);
+}
+
+.dark-theme .profil h4 {
+  color:  rgba(183, 170, 255, 1)
+}
+.dark-theme .profil p {
+  color:  rgba(255, 255, 255, 1)
+  
+  
+}
+
+.dark-theme .Projects h2 {
+  color: rgba(174, 188, 207, 1);
+}
+.dark-theme .Projects h4 {
+  color: rgba(207, 203, 255, 1)
+}
+.dark-theme .Projects p {
+   color: rgba(255, 255, 255, 1)
+}
+.dark-theme .Projects .btn {
+  background-color: rgba(56, 56, 56, 1);
+  border-color: rgba(143, 136, 255, 1);
+  color: rgba(143, 136, 255, 1);
+}
+.dark-theme .Footer {
+  background-color:rgba(20, 20, 20, 1);
+  color: #FFFFFF;
+}
+.dark-theme .Footer h2 {
+  color:  rgba(174, 188, 207, 1);
+}
+
+.dark-theme .Footer a {
+  color:  rgba(186, 178, 231, 1);
+}
+
+.dark-theme .Footer .personalBlog {
+  color: rgba(225, 225, 255, 1)
+}
+
+.dark-theme .Footer .github {
+  color: rgba(23, 209, 139, 1)
+}
+
+.dark-theme .Footer .linkedin {
+  color: rgba(11, 166, 246, 1);
+}
+.dark-theme.buttons1 {
+  color: rgba(56, 56, 56, 1);
 }
 
 .switch {
@@ -98,12 +199,7 @@ html {
   top: 50px;
 }
   
-.theme-switch {
-display: inline-block;
-height: 34px;
-position: relative;
-width: 60px;
-}
+
 
 .theme-switch input {
 display:none;
@@ -130,7 +226,7 @@ background-color: rgba(255, 232, 110, 1);
 bottom: 4px;
 content: "";
 height: 26px;
-left: 4px;
+right: 5px;
 position: absolute;
 transition: .4s;
 width: 15px;
@@ -138,13 +234,25 @@ height: 16px;
 
 }
 
+.slider:after {
+  background-color: rgba(255, 232, 110, 1);
+  bottom: 4px;
+  height: 26px;
+  right: 5px;
+  position: absolute;
+  transition: .4s;
+  width: 15px;
+  height: 16px;
+  
+  }
+
 input:checked + .slider {
 background-color: rgba(58, 58, 58, 1);
-
+content: ""
 }
 
 input:checked + .slider:before {
-transform: translateX(26px);
+transform: translateX(-27px);
 }
 
 .slider.round {
@@ -300,6 +408,7 @@ body {
  align-content: center;
  margin-top: 40px;
  font-style: medium;
+ align-items: center;
  
 }
 .button {
@@ -311,8 +420,6 @@ body {
   padding: 12px 32px 12px 32px;
   text-decoration: none;
   
-  
-
 }
 .icon2 {
   margin-top: 2px;
@@ -326,7 +433,13 @@ body {
   font-family: 'Inter';
   padding: 12px 32px 12px 32px;
   text-decoration: none;
-  
+  gap: 5px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
   
 }
 /*Skills*/
@@ -416,6 +529,7 @@ body {
   display: flex;
   margin-bottom: 39px;
   margin-top: 30px;
+  color:  #1F2937;
 }
 
 .profil  {
@@ -679,3 +793,41 @@ body {
   color: #0077B5;
   text-decoration: none;
   }
+
+  /*Mobile*/
+
+  @media (max-width: 480px) {
+    .App {
+      flex-wrap: nowrap;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    
+    }
+    .header-section {
+      justify-content: center;
+      text-align: center;
+    }
+  }
+
+  /*Tablets*/
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .body {
+      flex-wrap: nowrap;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      
+    }
+
+    .switcher {
+      justify-content: center;
+    }
+
+    footer {
+      text-align: center;
+    }
+  }
+    
+ 

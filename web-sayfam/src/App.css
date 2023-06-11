@@ -419,7 +419,9 @@ body {
   color: #FFFFFF;
   padding: 12px 32px 12px 32px;
   text-decoration: none;
-  
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .icon2 {
   margin-top: 2px;

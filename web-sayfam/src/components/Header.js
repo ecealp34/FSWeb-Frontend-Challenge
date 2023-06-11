@@ -14,7 +14,6 @@ function Header(  ) {
     <div className="logo">
           <a>E</a>
         </div>
-      
         <div style={{display: "flex", flexDirection: "row", gap: "25px", marginRight: "150px"}}> 
             <a href="#skills" className="skillsLink">{data.english.headerSkills}</a> 
             <a className="projects">{data.english.headerProjects} </a>

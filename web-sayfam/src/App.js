@@ -14,11 +14,11 @@ import {LanguageProvider} from "./components/Switcher"
 
 function App() {
 
-   const{ darkMode } = useDarkMode()
+   const{ darkMode } = useDarkMode();
  
   return (
     <div className={darkMode ? "dark-mode" : "App"}>
-        <div className="body" >
+        <div className="body">
         <Switcher  />
         <Header/>
         <Info/>
